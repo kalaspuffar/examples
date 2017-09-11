@@ -48,6 +48,18 @@ https://developer.android.com/sdk/installing/adding-packages.html.
 Once these are done, set up the android_sdk_repository rule in the WORKSPACE file,
 following the instructions in the comments there.
 
+```
+android_sdk_repository(
+    name = "androidsdk",
+    # Set the path to the directory the Android SDK was unzipped into.
+    path = "./android_sdk_folder",
+    # Set the API level of the installed SDK Platform.
+    api_level = 22,
+    # Set the version of the build tools (a directory inside build-tools)
+    build_tools_version="22.0.1"
+)
+```
+
 You can build and install this application by connecting an Android emulator or
 device via adb and running:
 
