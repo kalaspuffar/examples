@@ -49,10 +49,6 @@ Once these are done, set up the android_sdk_repository rule in the WORKSPACE fil
 following the instructions in the comments there.
 
 ```
-src/main/java/com/google/devtools/build/lib/bazel/rules/python/python_stub_template.txt 
-```
-
-```
 android_sdk_repository(
     name = "androidsdk",
     # Set the path to the directory the Android SDK was unzipped into.
